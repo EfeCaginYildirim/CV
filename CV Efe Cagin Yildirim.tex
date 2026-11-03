@@ -1,0 +1,341 @@
+%-------------------------
+% Resume in Latex
+% Based on the template by Jake Gutierrez : https://github.com/sb2nov/resume
+% Adapted for Efe Cagin YILDIRIM -- version optimisée ATS
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+
+% Métadonnées PDF (lues par certains ATS)
+\hypersetup{
+  pdftitle={CV - Efe Cagin Yildirim - Stage ingénieur systèmes embarqués, électronique, data science},
+  pdfauthor={Efe Cagin Yildirim},
+  pdfsubject={Curriculum vitae},
+  pdfkeywords={systèmes embarqués, électronique, STM32, C, VHDL, FPGA, Java, SQL, Python, data science, machine learning, stage}
+}
+
+\pagestyle{empty}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titlespacing*{\section}{0pt}{7pt}{10pt}
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Ligne « Recherche » : à adapter à chaque offre (un seul domaine idéalement)
+\newcommand{\recherche}{systèmes embarqués, électronique ou data science}
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{
+      l@{\extracolsep{\fill}}r
+    }
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{
+      l@{\extracolsep{\fill}}r
+    }
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \vspace{2pt}\begin{itemize}[label=\textbullet]
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% Liens écrits en clair (pas d'icônes) : l'ATS lit le texte, pas l'icône ni l'URL cachée
+\begin{center}
+    \textbf{\Huge \scshape Efe Cagin Yildirim} \\ \vspace{2pt}
+    \small
+    Rennes, France $|$
+    \href{mailto:efecaginyildirim@gmail.com}{\underline{efecaginyildirim@gmail.com}} \\
+    \href{https://www.linkedin.com/in/efecaginyildirim/}{\underline{linkedin.com/in/efecaginyildirim}} $|$
+    \href{https://github.com/EfeCaginYildirim}{\underline{github.com/EfeCaginYildirim}}
+\end{center}
+
+%-----------RECHERCHE-----------
+\vspace{-6pt}
+\begin{center}
+  \small\textbf{Stage ingénieur de 10 à 12 semaines à partir de juillet 2027}
+  -- \recherche
+\end{center}
+\vspace{-4pt}
+
+%-----------EDUCATION-----------
+\section{Formation}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {INSA Rennes}
+      {Rennes, France}
+      {Diplôme d'ingénieur -- Électronique et Informatique Industrielle (4\textsuperscript{e} année)}
+      {2022 -- 2028}
+      \vspace{4pt}
+
+    \resumeSubheading
+      {Politecnico di Torino}
+      {Turin, Italie}
+      {Échange Erasmus+ -- Electronic Engineering}
+      {02/2027 -- 06/2027}
+
+      \resumeItemListStart
+        \resumeItem{
+          Cours prévus : Analog and Telecommunication Electronics,
+          Radar and Remote Sensing, Operating Systems
+        }
+      \resumeItemListEnd
+      \vspace{9pt}
+
+    \resumeSubheading
+      {Lycée de Galatasaray}
+      {Istanbul, Turquie}
+      {Baccalauréat scientifique -- cursus bilingue franco-turc (admission sur concours)}
+      {2018 -- 2022}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Expérience professionnelle}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Otokar \textnormal{$|$ \emph{Java, SQL Server, JDBC, REST, JUnit, Maven}}}
+      {Sakarya, Turquie}
+      {Stagiaire -- Technologies de Fabrication Numérique et Intelligente}
+      {07/2025 -- 09/2025}
+
+      \resumeItemListStart
+        \resumeItem{
+          Projet européen MATISSE (Digital Twin) : développement d'un
+          \href{https://github.com/EfeCaginYildirim/sensor_data_collector}{\underline{collecteur automatisé}}
+          des données des capteurs sur des moteurs
+        }
+        \resumeItem{
+          Collecte parallèle via API REST (pool de threads et de connexions HTTP,
+          relance automatique sur erreur serveur), planification quotidienne
+          et récupération incrémentale des seules nouvelles données
+        }
+        \resumeItem{
+          Insertion en base SQL Server par lots \texttt{MERGE} de 5\,000 lignes,
+          dédoublonnage sur clé composite et validation des horodatages ;
+          50 tests unitaires JUnit
+        }
+      \resumeItemListEnd
+      \vspace{6pt}
+
+    \resumeSubheading
+      {Lucra Marble}
+      {Denizli, Turquie}
+      {Stage ouvrier -- contrôle qualité sur ligne de production de marbre}
+      {06/2023}
+
+      \resumeItemListStart
+        \resumeItem{
+          Contrôle qualité des plaques et observation de la ligne ; présentation des constats aux superviseurs
+        }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projets}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {
+        \textbf{
+          \href{https://github.com/EfeCaginYildirim/IBM-Capstone}
+          {\underline{IBM Capstone -- Prédiction d'atterrissage du Falcon 9}}
+        }
+        $|$ \emph{Python, pandas, SQL, scikit-learn, Plotly Dash}
+      }
+      {08/2026}
+
+      \resumeItemListStart
+        \resumeItem{
+          Pipeline complet sur 90 lancements SpaceX : collecte par API REST et web scraping (BeautifulSoup),
+          nettoyage pandas, 10 requêtes SQL, carte interactive Folium et tableau de bord Plotly Dash
+        }
+        \resumeItem{
+          4 classifieurs (régression logistique, SVM, arbre de décision, KNN) optimisés par GridSearchCV :
+          87,5\,\% d'exactitude en validation croisée, 83,3\,\% sur le jeu de test
+        }
+      \resumeItemListEnd
+      \vspace{6pt}
+
+    \resumeProjectHeading
+      {
+        \textbf{
+          \href{https://github.com/EfeCaginYildirim/projet_pmnd}
+          {\underline{Oscilloscope numérique temps réel}}
+        }
+        $|$ \emph{C, STM32, GTK+3, SDL2, UART}
+      }
+      {01/2026 -- 06/2026}
+
+      \resumeItemListStart
+        \resumeItem{
+          Acquisition sur microcontrôleur STM32 à 500 kHz (convertisseur ADC 12 bits, résolution 0,37 mV)
+          transmise par UART ; architecture MVC (Modèle-Vue-Contrôleur) multithreadée lock-free
+          sur buffer circulaire de 10M échantillons
+        }
+        \resumeItem{
+          En charge de l'interface GTK+3 et des curseurs de mesure ($\Delta t$, $\Delta V$) ;
+          100\,\% de couverture de tests sur le Modèle
+        }
+      \resumeItemListEnd
+      \vspace{6pt}
+
+    \resumeProjectHeading
+      {
+        \textbf{Traceur de courbes de transistors}
+        $|$ \emph{Électronique analogique, OrCAD PSpice}
+      }
+      {05/2026 -- 06/2026}
+
+      \resumeItemListStart
+        \resumeItem{
+          Carte traçant $I_C = f(V_{CE})$ de transistors NPN sur oscilloscope (mode XY) :
+          rampe 0--18\,V par amplificateur non-inverseur, source de courant à 4 niveaux
+          (5 à 40\,$\mu$A) et mesure par INA139, validées en simulation PSpice
+        }
+      \resumeItemListEnd
+      \vspace{6pt}
+
+    \resumeProjectHeading
+      {
+        \textbf{Récepteur ultrasonore de détection d'obstacle}
+        $|$ \emph{Électronique analogique, OrCAD PSpice}
+      }
+      {12/2025 -- 01/2026}
+
+      \resumeItemListStart
+        \resumeItem{
+          Chaîne de réception à 40\,kHz détectant un obstacle jusqu'à 1\,m :
+          amplificateur à transistor à gain réglable (5--40), redresseur de précision
+          et filtre actif d'enveloppe ; consommation de 77,5\,mW
+        }
+      \resumeItemListEnd
+      \vspace{6pt}
+
+    \resumeProjectHeading
+      {
+        \textbf{Extension d'une unité d'exécution de processeur (CPU)}
+        $|$ \emph{Conception numérique RTL}
+      }
+      {12/2025 -- 01/2026}
+
+      \resumeItemListStart
+        \resumeItem{
+          Diviseur itératif piloté par machine à états finis (FSM), additionneur-soustracteur 16 bits,
+          diviseur de fréquence
+        }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \href{https://www.coursera.org/account/accomplishments/professional-cert/PTRTL7GBN782}{\underline{IBM Data Science Professional Certificate}}
+      (IBM / Coursera) -- Python, SQL, analyse de données, machine learning
+    }}
+ \end{itemize}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Compétences techniques}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programmation}{ : C, C++, Java, Python, SQL, VHDL, Bash} \\
+     \textbf{Systèmes embarqués}{ : STM32, FPGA, Quartus Prime, ModelSim, UART, Linux} \\
+     \textbf{Électronique \& Signal}{ : électronique analogique, traitement du signal, filtrage, OrCAD, PSpice, KiCad} \\
+     \textbf{Data Science \& Machine Learning}{ : NumPy, pandas, Matplotlib, Seaborn, scikit-learn, Plotly Dash, Folium, Jupyter} \\
+     \textbf{Outils}{ : MATLAB, Simulink, Git, GitLab, Maven, CATIA, Microsoft Office}
+    }}
+ \end{itemize}
+
+%-----------LANGUAGES-----------
+\section{Langues}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Turc (langue maternelle) $\cdot$
+      Français (bilingue) $\cdot$
+      Anglais (courant) $\cdot$
+      Italien (intermédiaire)
+    }}
+ \end{itemize}
+
+%-----------INTERESTS-----------
+\section{Centres d'intérêt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Fitness, football, basketball $\cdot$
+      Membre du Congrès (assemblée générale) du Galatasaray SK depuis 2025
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
